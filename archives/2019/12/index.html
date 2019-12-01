@@ -6,11 +6,11 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Hexo</title>
+  <title>Archives: 2019/12 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;index.html">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;archives&#x2F;2019&#x2F;12&#x2F;index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:locale" content="en">
 <meta name="twitter:card" content="summary">
@@ -151,177 +151,47 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-jsp第一次课" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
+  
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/12/01/jsp%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%AF%BE/">jsp第一次课</a>
-    </h1>
-  
-
-        
-        <a href="/2019/12/01/jsp%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%AF%BE/" class="archive-article-date">
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2019" class="archive-year">2019</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2019/12/01/jsp%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%AF%BE/" class="archive-article-date">
   	<time datetime="2019-12-01T11:08:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-01</time>
 </a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>#这是jsp第一次课<br>1、软件架构</p>
-<p>1)    C/S：客户端/服务器端<br>        例如：360安全卫士、QQ等<br>2)    B/S：浏览器/服务器端<br>            例如：淘宝网、京东网、微博、bilibili等<br>2. 资源分类</p>
-<p>1)    静态资源：所有用户访问后，得到的结果都是一样的，称为静态资源.静态资源可以直接被浏览器解析如： html,css,JavaScript<br>2)    动态资源:每个用户访问相同资源后，得到的结果可能不一样。称为动态资源。动态资源被访问后，需要先转换为静态资源，在返回给浏览器如：servlet/jsp,php,asp….<br>3. 网络通信三要素</p>
-<p>1)    IP：电子设备(计算机)在网络中的唯一标识。<br>2)    端口：应用程序在计算机中的唯一标识。 0~65536<br>3)    传输协议：规定了数据传输的规则<br>4. 基础协议：</p>
-<p>1)    tcp:安全协议，三次握手、四次挥手。 速度稍慢<br>2)    udp：不安全协议。 速度快<br>2.2、WEB服务器<br>1、服务器：安装了服务器软件的计算机<br>2、服务器软件：接收用户的请求，处理请求，做出响应<br>3、web服务器软件：接收用户的请求，处理请求，做出响应。<br>在web服务器软件中，可以部署web项目，让用户通过浏览器来访问这些项目<br>web容器<br>4、常见的java相关的web服务器软件：<br>Tomcat：Apache基金组织，中小型的JavaEE服务器，仅仅支持少量的JavaEE规范<br>servlet/jsp。开源的，免费<br>webLogic：oracle公司，大型的JavaEE服务器，支持所有的JavaEE规范，收费的。<br>webSphere：IBM公司，大型的JavaEE服务器，支持所有的JavaEE规范，收费的。<br>JBOSS：JBOSS公司的，大型的JavaEE服务器，支持所有的JavaEE规范，收费的。<br>2.3、Tomcat服务器下载、安装、启动、关闭</p>
-<ol>
-<li><p>下载：<a href="http://tomcat.apache.org/" target="_blank" rel="noopener">http://tomcat.apache.org/</a> </p>
-</li>
-<li><p>安装：解压压缩包即可。<br>注意：安装目录建议不要有中文和空格</p>
-</li>
-<li><p>卸载：删除目录就行了</p>
-</li>
-<li><p>启动：<br>bin/startup.bat ,双击运行该文件即可</p>
-</li>
-</ol>
-<p>5、访问：浏览器输入：<a href="http://localhost:8080" target="_blank" rel="noopener">http://localhost:8080</a> 回车访问自己<br><a href="http://localhost:8080" target="_blank" rel="noopener">http://localhost:8080</a> 访问别人</p>
-<p>6、tomcat的关闭</p>
-<ol>
-<li>正常关闭：</li>
-</ol>
-<ul>
-<li>bin/shutdown.bat</li>
-<li>ctrl+c</li>
-</ul>
-<ol start="2">
-<li>强制关闭：</li>
-</ol>
-<ul>
-<li>点击启动窗口的×<br>注意8.5启动过程中可能会遇到乱码问题，可以用以下方法解决<br>打开tomcat/conf/目录<br>修改logging.properties<br>找到<br>java.util.logging.ConsoleHandler.encoding = utf-8这行<br>更改为<br>java.util.logging.ConsoleHandler.encoding = GBK</li>
-</ul>
-<p>2.4、掌握为eclipse配置tomcat</p>
-<p>2.5、创建第一个JavaWeb项目并部署<br>1、新建Web程序，然后测试服务器工作状态<br>new -&gt;new project -&gt;web -&gt; dynamic web project</p>
-<p>2、部署javaweb项目<br>右键选择项目，然后run as</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/12/01/jsp%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%AF%BE/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
         </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+    	 
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/17/hello-world/">Hello World</a>
+      <a class="archive-article-title" href="/2019/12/01/jsp%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%AF%BE/">jsp第一次课</a>
     </h1>
   
 
-        
-        <a href="/2019/10/17/hello-world/" class="archive-article-date">
-  	<time datetime="2019-10-17T02:50:59.968Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-17</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+        <div class="article-info info-on-right">
+          
+          
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/10/17/hello-world/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
+        </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
   
   
+    </div></section>
+  
+
+    
 
 
           </div>
@@ -343,9 +213,9 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
+		isHome: false,
 		isPost: false,
-		isArchive: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
